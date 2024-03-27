@@ -3,6 +3,7 @@
   "name": "Fireproof Chrome Extension",
   "version": "1.0.0",
   "description": "The best way to view your documents inside the devtools for websites using fireproof database",
+  "devtools_page": "devtools.html",
   "host_permissions": ["<all_urls>"],
   "permissions": ["activeTab", "scripting", "storage", "offscreen", "tabs"],
   "background": {
@@ -10,6 +11,5 @@
   },
   "action": {
     "default_title": "Click to add extension to devtools"
-  },
-  "devtools_page": "devtools.html"
+  }
 }

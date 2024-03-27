@@ -16,6 +16,8 @@ async function handleMessages(message) {
 
 async function storelocalstorageitems(message) {
   //Inside this lies the logic of whether we got back new data from the web browser's local storage and we stored it here
+  //I think what we can do is take the hash value of the new returned data
+  //If the hash value is different from the previous one, this means that the data has changed and store the changed data
   chrome.runtime.sendMessage({
     type: "localstorage-access-result",
     updated: true,
